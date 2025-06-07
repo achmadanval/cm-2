@@ -19,7 +19,18 @@ public class AntrianSPBUMain {
                 case 1:
                     
                     break;
-            
+                case 2: 
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    queueLL Qll = new queueLL();
+                    Qll.memanggilAntrian();
+                    break;
+                case 5:
+                    queueLL Qull = new queueLL();
+                    Qull.RiwayatTransaksi();
+                    break;
                 default:
                     break;
             }
