@@ -13,4 +13,10 @@ public class Kendaraan {
         System.out.println("Tipe Kendaraan       : " + tipe);
         System.out.println("Merek Kendaraan      : " + merk);
     }
+
+    @Override
+    
+    public String toString() {
+        return "Plat Nomor: " + platNomor + ", Tipe: " + tipe + ", Merk: " + merk;
+    }
 }

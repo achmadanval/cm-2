@@ -7,10 +7,11 @@ public class queueLL {
     boolean isEmpty(){
         return front == null;
     }
-    //melayani antrian
-    public void memanggilAntrian(){
+
+    public Kendaraan memanggilAntrian(){
         if (isEmpty()) {
             System.out.println("Antrian masih kosong tidak ada yang dipanggil");
+            return null;
         }else{
             Kendaraan knd = front.data;
             front = front.next;
@@ -18,7 +19,7 @@ public class queueLL {
                 rear = null;
             }
             size--;
-            System.out.println("Memanggil: " + knd);
+           // System.out.println("Memanggil: " + knd);
             
             Node riwayatNode = new Node(knd);
             if (headRiwayat == null) {
@@ -27,6 +28,7 @@ public class queueLL {
                 tailRiwayat.next = riwayatNode;
                 tailRiwayat = riwayatNode;
             }
+            return knd;
         }
     }
 
@@ -42,4 +44,15 @@ public class queueLL {
             }
         }
     }
+    public void tambahAntrian(Kendaraan data){
+    Node newNode = new Node(data);
+    if (isEmpty()) {
+        front = rear = newNode;
+    } else {
+        rear.next = newNode;
+        rear = newNode;
+    }
+    size++;
+    System.out.println(">> Kendaraan masuk ke dalam antrian.");
+}
 }
