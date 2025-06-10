@@ -51,10 +51,10 @@ public class QueueTransaksi {
         } else {
             int i = front;
             while (i != rear) {
-                System.out.println(data[i].kendaraan.platNomor + ": Rp. " + data[i].bbm.hargaPerLiter * data[i].liter + "\n");
+                System.out.println("Plat nomor kendaraan :  " + data[i].kendaraan.platNomor + "       |   : Rp. " + data[i].bbm.hargaPerLiter * data[i].liter + "\n");
                 i = (i + 1) % max;
             }
-            System.out.println(data[i].kendaraan.platNomor + ": Rp. " + data[i].bbm.hargaPerLiter * data[i].liter + "\n");
+            System.out.println("Plat nomor kendaraan :  " + data[i].kendaraan.platNomor + "       |   : Rp. " + data[i].bbm.hargaPerLiter * data[i].liter + "\n");
         }
     }
 }
