@@ -63,7 +63,6 @@ public class SPBUmain {
                         antrian.removeFirst();
                         System.out.println(">> Transaksi berhasil dicatat.\n");
                     }
-
                     break;
 
                 case 5:
