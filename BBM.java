@@ -1,21 +1,9 @@
-public class BBM{
+public class BBM {
     String namaBBM;
-    double hargaperliter;
-    int jumlahLiter;
+    double hargaPerLiter;
 
-    public BBM() {
-    }
-
-
-    public BBM(String namaBBM, double hargaperliter) {
+    BBM(String namaBBM, double harga) {
         this.namaBBM = namaBBM;
-        this.hargaperliter = hargaperliter;
-        this.jumlahLiter = 0;
-    }
-
-    void tampildata() { 
-        System.out.println("Nama BBM: " + namaBBM);
-        System.out.println("Harga per liter: " + hargaperliter);
-        System.out.println("Jumlah liter: " + jumlahLiter);
+        this.hargaPerLiter = harga;
     }
 }

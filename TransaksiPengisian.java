@@ -1,13 +1,19 @@
 public class TransaksiPengisian {
     Kendaraan kendaraan;
     BBM bbm;
-    double liter;
-    double totalBayar;
+    double liter, totalBayar;
 
-    public TransaksiPengisian(Kendaraan kendaraan, BBM bbm, double liter){
+    public TransaksiPengisian(Kendaraan kendaraan, BBM bbm, double liter) {
         this.kendaraan = kendaraan;
         this.bbm = bbm;
         this.liter = liter;
-        totalBayar = bbm.hargaperliter * liter;
+        this.totalBayar = liter * bbm.hargaPerLiter;
+    }
+
+    public void tampilkanTransaksi() {
+        kendaraan.tampilkanInformasi(); 
+        System.out.println("BBM: " + bbm.namaBBM);
+        System.out.println("Liter: " + liter);
+        System.out.println("Total bayar: Rp" + totalBayar);
     }
 }
