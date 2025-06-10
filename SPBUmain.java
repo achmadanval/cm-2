@@ -15,7 +15,7 @@ public class SPBUmain {
             System.out.println("4. Layani Kendaraan");
             System.out.println("5. Tampilkan Riwayat Transaksi");
             System.out.println("0. Keluar");
-            System.out.print("pilih: ");
+            System.out.print("Pilih: ");
             pilihan = scan.nextInt();
             scan.nextLine(); 
 
@@ -68,6 +68,7 @@ public class SPBUmain {
 
                 case 5:
                     System.out.println("\n-- Riwayat Transaksi --");
+                    System.out.println("Daftar Transaksi: ");
                     riwayatTransaksi.print();
                     break;
 
