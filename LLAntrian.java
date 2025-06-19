@@ -50,4 +50,17 @@ public class LLAntrian {
     public int getSize() {
         return ttl_antrian;
     }
+
+    public Kendaraan cariKendaraan(String plat) {
+        NodeLLAntrian temp = head;
+        while (temp != null) {
+            if (temp.data.getPlatNomor().equals(plat)) {
+                return temp.data;
+            }
+            temp = temp.next;
+        }
+        return null; // Kendaraan tidak ditemukan
+    }
+
+    
 }

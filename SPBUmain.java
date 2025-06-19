@@ -70,9 +70,11 @@ public class SPBUmain {
                     System.out.println("Daftar Transaksi: ");
                     riwayatTransaksi.print();
                     break;
-
-                case 0:
-                    System.out.println("Terima kasih telah menggunakan aplikasi ini.");
+                
+                case 6:
+                    System.out.print("Masukkan nama BBM untuk filter: ");
+                    String namaBBM = scan.nextLine();
+                    riwayatTransaksi.TampilkanriwayattranskasiberdasarkanjenisBBM(namaBBM);
                     break;
 
                 default:

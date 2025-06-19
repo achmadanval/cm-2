@@ -13,4 +13,8 @@ public class Kendaraan {
         System.out.println("Tipe Kendaraan       : " + tipe);
         System.out.println("Merek Kendaraan      : " + merk);
     }
+
+    public String getPlatNomor() {
+        return platNomor;
+    }
 }

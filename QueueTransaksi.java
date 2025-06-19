@@ -57,4 +57,20 @@ public class QueueTransaksi {
             System.out.println("Plat nomor kendaraan :  " + data[i].kendaraan.platNomor + "       |   : Rp. " + data[i].bbm.hargaPerLiter * data[i].liter + "\n");
         }
     }
+    public void TampilkanriwayattranskasiberdasarkanjenisBBM(String namaBBM) {
+        if (isEmpty()) {
+            System.out.println("riwayat transaksi tidak ada !");
+        } else {
+            int i = front;
+            boolean found = false;
+            while (i != rear) {
+                if (data[i].bbm.namaBBM.equalsIgnoreCase(namaBBM)) {
+                    System.out.println("Plat nomor kendaraan :  " + data[i].kendaraan.platNomor + "       |   : Rp. " + data[i].bbm.hargaPerLiter * data[i].liter + "\n");
+                    found = true;
+                }
+                i = (i + 1) % max;
+            }
+
+        }
+}
 }
